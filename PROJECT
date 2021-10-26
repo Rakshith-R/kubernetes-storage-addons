@@ -1,0 +1,25 @@
+domain: openshift.io
+layout:
+- go.kubebuilder.io/v3
+projectName: storage-maintainance
+repo: github.com/csi-addons/storage-maintainance
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: openshift.io
+  group: csiaddons
+  kind: CSIAddonsJob
+  path: github.com/csi-addons/storage-maintainance/api/v1alpha1
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: openshift.io
+  group: csiaddons
+  kind: CSIAddonsCronJob
+  path: github.com/csi-addons/storage-maintainance/api/v1alpha1
+  version: v1alpha1
+version: "3"

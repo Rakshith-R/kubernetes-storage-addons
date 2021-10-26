@@ -1,0 +1,9 @@
+apiVersion: csiaddons.openshift.io/v1alpha1
+kind: CSIAddonsJob
+metadata:
+  name: csiaddonsjob-sample
+spec:
+  operation:
+    spaceReclaim:
+      pvc: "hello"
+      pv: "haha"

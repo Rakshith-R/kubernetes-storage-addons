@@ -1,0 +1,10 @@
+apiVersion: csiaddons.openshift.io/v1alpha1
+kind: CSIAddonsCronJob
+metadata:
+  name: csiaddonscronjob-sample
+spec:
+  schedule: "0 1 0 0 0"
+  csiAddonsJobSpec:
+    operation:
+      spaceReclaim:
+        pvc: "hello"
